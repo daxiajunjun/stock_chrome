@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "stock graph",
+	"description": "This extension shows specified stock graph",
+	"version": "0.0.1",
+	"icons":{
+		"16": "images/stock31.png",
+        "48": "images/stock47.png",
+        "128": "images/stock72.png"
+	},
+	"browser_action":{
+		"default_icon": "images/stock31.png",
+		"default_popup": "stock_number.html"
+	},
+	"permissions":[
+		"activeTab",
+		"storage",
+		"http://hq.sinajs.cn/"
+	],
+
+	"content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.js", "util.js" , "stock_content.js"],
+	  "css": ["stock_content.css"],
+	  "run_at": "document_end"
+    }
+  ]
+}

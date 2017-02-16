@@ -1,0 +1,40 @@
+.g-stock{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    width:300px;
+    max-height:400px;
+    overflow: hidden;
+    background-color: #fff;
+    z-index:9999;
+    box-shadow: -1px -1px 4px #d0a362;
+}
+.g-stock .f-close{
+    position: absolute;
+    top:0px;
+    right:0px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.g-stock h4{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size:14px;
+}
+.g-stock table{
+    margin: 0px;
+}
+.g-stock .m-stock-table{
+    width:100%;
+}
+.m-stock-table tr td,.m-stock-table tr th{
+    text-align: center;
+}
+.s-txt-red{
+    color:red;
+}
+.s-txt-green{
+    color:green;
+}

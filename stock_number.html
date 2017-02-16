@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>input stock number</title>
+	<style type="text/css">
+		* {	margin: 0px; padding: 0px; }
+		body {margin:10px;width:300px}
+		.m-stock-container{display: none}
+		.u-title { margin: 10px 0; font-size:14.5px; text-align: center;}
+		.m-stock-table{ width:100% }
+		.m-stock-table tr td{text-align: center}
+		form { width: 300px; }
+		input {	width: 100%; box-sizing: border-box;padding: 5px 10px;border-radius: 3px;border: 1px solid #aaa;height: 34px;}
+		.u-btn-save { width: 100%;background: #00BCD4; border: 1px solid #00bcd4; padding: 5px; border-radius: 3px; margin-top: 5px;color: #eee; }
+	</style>
+</head>
+
+<body>
+	<div class="m-stock-container">
+		<h4 class="u-title">已关注股票</h4>
+		<table class="m-stock-table">
+			<thead>
+			   <tr>
+				   <th>代码</th>
+				   <th>名称</th>
+				   <th>关注时价格</th>
+				   <th>操作</th>
+			   </tr>
+			</thead>
+			<tbody class="m-stock-content">
+			</tbody>
+		</table>
+	</div>
+	<div class="m-form">
+		<h4 class="u-title">输入股票代码</h4>
+		<form>
+			<input type="text" name="" id="u-stock-number" placeholder="股票代码">
+			<div>
+				<button type="button" class="u-btn-save">保存</button>
+			</div>
+		</form>
+	</div>
+	<script src="jquery.js"></script>
+	<script src="util.js"></script>
+	<script src="stock.js"></script>
+</body>
+
+</html>
